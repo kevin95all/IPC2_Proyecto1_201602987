@@ -1,3 +1,5 @@
+from tkinter import *
+from tkinter import filedialog
 from Operaciones import Operaciones
 
 
@@ -27,7 +29,7 @@ class Main:
             self.op = input('--> Ingrese una opción: ')
 
             if self.op == '1':
-                pass
+                self.cargar_archivo()
 
             elif self.op == '2':
                 pass
@@ -49,7 +51,15 @@ class Main:
                 print('--> Opción no valida')
 
     def cargar_archivo(self):
-        pass
+        ventana = Tk()
+        self.ruta = filedialog.askopenfilename(
+            title='Buscar archivo',
+            filetypes=[
+                ('Archivos XML', '*.xml'),
+                ('Todos los archivos', '*.*')
+            ]
+        )
+        ventana.mainloop()
 
     def salir(self):
         print('                       ')
