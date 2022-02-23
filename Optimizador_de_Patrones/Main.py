@@ -61,6 +61,18 @@ class Main:
         )
         ventana.mainloop()
 
+    def seleccionar_piso(self):
+        pass
+
+    def mostrar_piso(self):
+        pass
+
+    def seleccionar_patron(self):
+        pass
+
+    def mostrar_patron(self):
+        pass
+
     def salir(self):
         print('                       ')
         print('--> Programa finalizado')
