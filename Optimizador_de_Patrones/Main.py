@@ -32,16 +32,16 @@ class Main:
                 self.cargar_archivo()
 
             elif self.op == '2':
-                pass
+                self.seleccionar_piso()
 
             elif self.op == '3':
-                pass
+                self.mostrar_piso()
 
             elif self.op == '4':
-                pass
+                self.seleccionar_patron()
 
             elif self.op == '5':
-                pass
+                self.mostrar_patron()
 
             elif self.op == '6':
                 self.salir()
